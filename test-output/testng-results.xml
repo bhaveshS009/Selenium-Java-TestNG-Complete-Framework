@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up reports and test is getting ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting Done Test Can be started]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser and getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Web URL verified]]>
+    </line>
+    <line>
+      <![CDATA[Login button Sucessfully clicked]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed - Report Generated]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser and getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Login button Sucessfully clicked]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed - Report Generated]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-03-20T23:55:48 IST" name="Suite" finished-at="2024-03-20T23:56:09 IST" duration-ms="20411">
+    <groups>
+    </groups>
+    <test started-at="2024-03-20T23:55:48 IST" name="Test" finished-at="2024-03-20T23:56:09 IST" duration-ms="20411">
+      <class name="com.org.testcases.DashboardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.DashboardTest@2ca923bb]" started-at="2024-03-20T23:56:00 IST" name="setup" finished-at="2024-03-20T23:56:04 IST" duration-ms="4101" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser and getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DashboardVerification()[pri:0, instance:com.org.testcases.DashboardTest@2ca923bb]" started-at="2024-03-20T23:56:04 IST" name="DashboardVerification" finished-at="2024-03-20T23:56:08 IST" duration-ms="4542" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login button Sucessfully clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DashboardVerification -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.DashboardTest@2ca923bb]" started-at="2024-03-20T23:56:08 IST" name="teardownMethod" finished-at="2024-03-20T23:56:08 IST" duration-ms="63" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DashboardVerification status=SUCCESS method=DashboardTest.DashboardVerification()[pri:0, instance:com.org.testcases.DashboardTest@2ca923bb] output=Login button Sucessfully clicked]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed - Report Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.DashboardTest@2ca923bb]" started-at="2024-03-20T23:56:08 IST" name="tearDown" finished-at="2024-03-20T23:56:09 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.org.testcases.DashboardTest -->
+      <class name="com.org.testcases.loginTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.loginTest@35b74c5c]" started-at="2024-03-20T23:55:48 IST" name="setUpSuite" finished-at="2024-03-20T23:55:48 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up reports and test is getting ready]]>
+            </line>
+            <line>
+              <![CDATA[Setting Done Test Can be started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.loginTest@35b74c5c]" started-at="2024-03-20T23:55:48 IST" name="setup" finished-at="2024-03-20T23:55:54 IST" duration-ms="6262" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser and getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginApp()[pri:0, instance:com.org.testcases.loginTest@35b74c5c]" started-at="2024-03-20T23:55:54 IST" name="loginApp" finished-at="2024-03-20T23:55:57 IST" duration-ms="2804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Web URL verified]]>
+            </line>
+            <line>
+              <![CDATA[Login button Sucessfully clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.loginTest@35b74c5c]" started-at="2024-03-20T23:55:57 IST" name="teardownMethod" finished-at="2024-03-20T23:55:59 IST" duration-ms="2051" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=loginTest.loginApp()[pri:0, instance:com.org.testcases.loginTest@35b74c5c] output=Web URL verified]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed - Report Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.loginTest@35b74c5c]" started-at="2024-03-20T23:55:59 IST" name="tearDown" finished-at="2024-03-20T23:56:00 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.org.testcases.loginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
