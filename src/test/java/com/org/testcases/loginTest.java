@@ -1,14 +1,15 @@
 package com.org.testcases;
 
-import java.io.IOException;
-
+import org.testng.Assert;
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.org.pages.BaseClass;
 import com.org.pages.loginPage;
+import com.org.utility.ITestListener_TestNG;
 
+@Listeners(ITestListener_TestNG.class)
 public class loginTest extends BaseClass {
 	
 
@@ -30,7 +31,7 @@ public class loginTest extends BaseClass {
 		catch (Exception e) {
 		
 			e.printStackTrace();
-			logger.fail("Issue in Web Page launch...!!!");
+			Assert.fail("Issue in Web Page launch...!!!");
 		
 		} 
 	

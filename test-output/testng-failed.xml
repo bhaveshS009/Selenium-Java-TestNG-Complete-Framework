@@ -9,8 +9,18 @@
           <include name="tearDown"/>
           <include name="DashboardVerification"/>
           <include name="setup"/>
+          <include name="setUpSuite"/>
         </methods>
       </class> <!-- com.org.testcases.DashboardTest -->
+      <class name="com.org.testcases.loginTest">
+        <methods>
+          <include name="loginApp"/>
+          <include name="teardownMethod"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setUpSuite"/>
+        </methods>
+      </class> <!-- com.org.testcases.loginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

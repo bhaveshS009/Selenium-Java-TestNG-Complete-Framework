@@ -3,6 +3,8 @@ package com.org.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
+import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -16,7 +18,9 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.org.utility.BrowserFactory;
 import com.org.utility.ConfigDataProvider;
+import com.org.utility.WebDriver_EventListener;
 import com.org.utility.Helper;
+
 
 
 public class BaseClass {
@@ -27,12 +31,22 @@ public class BaseClass {
 	//Static because common across all test class execution
 	public static ExtentSparkReporter spark;
 	public static ExtentReports report;
+	//public static WebDriverListener;
+	//public static EventListener  eventListener;
+	//public  static EventFiringWebDriver e_driver;
+	//public static WebEventListener eventListener;
+	public static WebDriverListener eventListener;
+	public WebDriver decoratedDriver;
+	//eventListener = new EventFiringDecorator(listener1, listener2);
 
 
 	
 	
 	public BaseClass() {
 	report = new ExtentReports();
+	
+	//EventListener  eventListener = new EventListener();
+	
 	try {
 		config = new ConfigDataProvider();
 	} catch (IOException e) {
@@ -75,6 +89,7 @@ public class BaseClass {
 		
 		spark = new ExtentSparkReporter(System.getProperty("user.dir")+"/Reports/TestReport_"+Helper.getCurrentDateTime()+".html");
 		report.attachReporter(spark);
+		
 		//logger = report.createTest("Search For Product");
 		Reporter.log("Setting Done Test Can be started", true);
 	}
@@ -84,7 +99,16 @@ public class BaseClass {
 	public void setup()
 	{
 		Reporter.log("Trying to start browser and getting application ready", true);
+		WebDriverListener e_Listner = new WebDriver_EventListener();
 		driver = BrowserFactory.startApplication(driver, config.getBrowser(), config.getStagingUrl());
+		
+		WebDriver decoratedDriver = new EventFiringDecorator<WebDriver>(e_Listner).decorate(driver);
+		
+		//eventListener = new EventFiringDecorator<Object>(e_Listner);	
+		driver = decoratedDriver;
+		
+
+		
 		Reporter.log("Browser and application is up and running", true);
 	}
 	
