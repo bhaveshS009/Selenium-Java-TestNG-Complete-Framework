@@ -108,7 +108,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.org.testcases.loginTest" class="method navigator-link" hash-for-method="loginApp">loginApp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.org.testcases.LoginTest" class="method navigator-link" hash-for-method="loginApp">loginApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -141,7 +141,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.org.testcases.loginTest</span>
+              <span class="class-name">com.org.testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -165,7 +165,7 @@
 &lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.org.testcases.loginTest&quot;/&gt;
+      &lt;class name=&quot;com.org.testcases.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.org.testcases.DashboardTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -210,16 +210,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'DashboardVerification')
 data.setCell(0, 2, 'com.org.testcases.DashboardTest')
-data.setCell(0, 3, 18854);
+data.setCell(0, 3, 7181);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginApp')
-data.setCell(1, 2, 'com.org.testcases.loginTest')
-data.setCell(1, 3, 7801);
+data.setCell(1, 2, 'com.org.testcases.LoginTest')
+data.setCell(1, 3, 3656);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -231,18 +231,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">DashboardVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login button Sucessfully clicked</span>
+                <span class="reporter-method-output">Web Page launched correctly.. </span>
+                <span class="reporter-method-output"><br>Dashboard elements matched, correct user logged in </span>
+                <span class="reporter-method-output"><br> Result of the Test - DashboardVerification Exceuted - Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">loginApp</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Web URL verified</span>
                 <span class="reporter-method-output">Login button Sucessfully clicked</span>
                 <span class="reporter-method-output"><br> Result of the Test - loginApp Exceuted - Pass</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">DashboardVerification</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Login button Sucessfully clicked</span>
-                <span class="reporter-method-output"><br> Result of the Test - DashboardVerification Exceuted - Pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,51 +269,51 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.org.testcases.loginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.org.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">240 ms</span>
+                <span class="method-start">172 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.org.testcases.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">241 ms</span>
+                <span class="method-start">172 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">DashboardVerification</span>
-                <span class="method-start">6786 ms</span>
+                <span class="method-start">5250 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.org.testcases.loginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.org.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginApp</span>
-                <span class="method-start">7096 ms</span>
+                <span class="method-start">5250 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardownMethod([TestResult name=loginApp status=SUCCESS method=loginTest.loginApp()[pri:0, instance:com.org.testcas...)</span>
-                <span class="method-start">14918 ms</span>
+                <span class="method-name">teardownMethod([TestResult name=loginApp status=SUCCESS method=LoginTest.loginApp()[pri:0, instance:com.org.testcas...)</span>
+                <span class="method-start">8914 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18171 ms</span>
+                <span class="method-start">9448 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.org.testcases.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">teardownMethod([TestResult name=DashboardVerification status=SUCCESS method=DashboardTest.DashboardVerification()[p...)</span>
-                <span class="method-start">25648 ms</span>
+                <span class="method-start">12431 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26038 ms</span>
+                <span class="method-start">12447 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

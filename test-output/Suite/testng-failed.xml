@@ -3,24 +3,15 @@
 <suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.org.testcases.DashboardTest">
+      <class name="com.org.testcases.LoginTest">
         <methods>
           <include name="teardownMethod"/>
           <include name="tearDown"/>
-          <include name="DashboardVerification"/>
           <include name="setup"/>
           <include name="setUpSuite"/>
-        </methods>
-      </class> <!-- com.org.testcases.DashboardTest -->
-      <class name="com.org.testcases.loginTest">
-        <methods>
           <include name="loginApp"/>
-          <include name="teardownMethod"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="setUpSuite"/>
         </methods>
-      </class> <!-- com.org.testcases.loginTest -->
+      </class> <!-- com.org.testcases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

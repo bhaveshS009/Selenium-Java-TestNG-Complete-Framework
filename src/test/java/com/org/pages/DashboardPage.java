@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,13 +14,11 @@ import com.org.utility.ExcelReader;
 public class DashboardPage {
 	WebDriver driver;
 	ExcelReader ExcelRead = new ExcelReader();
-	//Input Data Excel Sheet Name
-	
-	
+
 	public DashboardPage(WebDriver ldriver) 
 	{
 		
-		this.driver = ldriver;	
+	this.driver = ldriver;	
 	}
 	
 	@FindBy(xpath = "//div[@class='content-header']/h1") WebElement DashboardHeader;
@@ -32,8 +29,9 @@ public class DashboardPage {
 	List <WebElement> dashboardElements;
 
 	
-	public void loginVerification() throws EncryptedDocumentException, IOException 
+	public void DashboardVerification() throws EncryptedDocumentException, IOException 
 	{
+		//Input Data Excel Sheet Name
 		String ExcelSheet = "Dashboard";
 		
 		String ExpectedBrowserTitle = ExcelRead.getExcelCellData(ExcelSheet, 0, 1);
@@ -56,35 +54,28 @@ public class DashboardPage {
 		
 		if (dashboardData.size()==dashboardElements.size())
 		{
-			//System.out.println("Same Dashboard Element Size");
-			
+			//Verification of each dashboard element against pre defined list from test data	
 			for (int i=0;i<dashboardData.size();i++)
 			{
-				Assert.assertEquals(dashboardData.get(i), dashboardElements.get(i).getText());
-			
+			Assert.assertEquals(dashboardData.get(i), dashboardElements.get(i).getText());			
 			}
 		}
 		else {
 			System.out.println(dashboardData.size());
-			for( String dashElement:dashboardData) {
-				System.out.println(dashElement);
-				
+			for( String dashElement:dashboardData) 
+			{
+			System.out.println(dashElement);				
 			}
 			
-			for( WebElement Element:dashboardElements) {
-				System.out.println(Element.getText());
-				
+			for( WebElement Element:dashboardElements) 
+			{
+			System.out.println(Element.getText());				
 			}
-			
-			
+						
 			System.out.println(dashboardElements.size());
 			
 			Assert.fail("Desired Dashboard Element Missing");
-		}
-		
-		
-		
-		
+		}		
 	
 	}
 	

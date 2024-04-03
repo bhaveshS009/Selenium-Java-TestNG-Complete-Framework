@@ -6,11 +6,11 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.org.pages.BaseClass;
-import com.org.pages.loginPage;
+import com.org.pages.LoginPage;
 import com.org.utility.ITestListener_TestNG;
 
 @Listeners(ITestListener_TestNG.class)
-public class loginTest extends BaseClass {
+public class LoginTest extends BaseClass {
 	
 
 	@Test
@@ -18,7 +18,7 @@ public class loginTest extends BaseClass {
 		System.out.println("Inside LoginApp Method");
 		logger = report.createTest("Login to CRM");
 		logger.info("Starting Application");
-		loginPage loginPage = PageFactory.initElements(driver, loginPage.class);
+		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		
 		//Login web
 

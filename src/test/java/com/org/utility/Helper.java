@@ -4,13 +4,9 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -32,16 +28,13 @@ public class Helper {
 		return screenshotPath;
 	}
 	public static String getCurrentDateTime() {
-		//yyyy-MM-dd'T'HH:mm:ss.SSSZ MM_dd_yy_HH_mm_ss
 		DateFormat customFormat = new SimpleDateFormat("MM_dd_yy_HH_mm_ss_SSS");
 		Date currentTime = new Date();
 		return customFormat.format(currentTime);
 	}
 
-	
-	
 	public void handleAlerts() {
-		
+		//TODO
 		
 	}
 }

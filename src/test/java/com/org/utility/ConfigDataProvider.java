@@ -8,15 +8,13 @@ import java.util.Properties;
 public class ConfigDataProvider {
 
 	Properties pro;
-	
-	
+		
 	public ConfigDataProvider() throws IOException {
 		File src = new File("./Config/Config.properties");
 		FileInputStream fis = new FileInputStream(src);
 		
 		pro = new Properties();
-		pro.load(fis);
-		
+		pro.load(fis);		
 		
 	}
 	

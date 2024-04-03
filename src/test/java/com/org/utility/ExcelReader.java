@@ -13,8 +13,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 
-
-
 public class ExcelReader {
 	public ConfigDataProvider config;
 	
@@ -28,8 +26,6 @@ public class ExcelReader {
 			//System.out.println(System.getProperty("user.dir")+ config.getTestDataExcelPath());
 	
 			Workbook wb = WorkbookFactory.create(fis);
-	
-
 			
 			Sheet sh = wb.getSheet(ExcelSheetName);
 			//Increase with 1 count to match the indexing with Excel standard
@@ -39,10 +35,8 @@ public class ExcelReader {
 			
 			e.printStackTrace();
 		}
-		
-		
-		return rw;
-		
+				
+		return rw;		
 	}
 	
 	
@@ -50,9 +44,7 @@ public class ExcelReader {
 		//Increase with 1 count to match the indexing with Excel standard
 		Cell cellData = (getExcelRowElement(ExcelSheetName,RowValue)).getCell(ColoumnValue);
 		
-		return cellData.getStringCellValue();
-		
-		
+		return cellData.getStringCellValue();	
 	}
 	
 	
@@ -91,6 +83,5 @@ public class ExcelReader {
 		Row RowElement = getExcelRowElement(ExcelSheetName,RowValue);
 		return convertRowToList(RowElement);
 		
-	}
-		
+	}	
 }
