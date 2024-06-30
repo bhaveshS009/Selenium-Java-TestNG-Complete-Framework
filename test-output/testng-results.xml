@@ -17,28 +17,16 @@
       <![CDATA[Browser and application is up and running]]>
     </line>
     <line>
-      <![CDATA[Browser and application is up and running]]>
+      <![CDATA[Web URL verified]]>
     </line>
     <line>
-      <![CDATA[Web URL verified]]>
+      <![CDATA[Browser and application is up and running]]>
     </line>
     <line>
       <![CDATA[Login button Sucessfully clicked]]>
     </line>
     <line>
       <![CDATA[Web Page launched correctly.. ]]>
-    </line>
-    <line>
-      <![CDATA[Login button Sucessfully clicked]]>
-    </line>
-    <line>
-      <![CDATA[<br> Result of the Test - loginApp Exceuted - Pass]]>
-    </line>
-    <line>
-      <![CDATA[Test about to end]]>
-    </line>
-    <line>
-      <![CDATA[Test Completed - Report Generated]]>
     </line>
     <line>
       <![CDATA[<br>Dashboard elements matched, correct user logged in ]]>
@@ -52,13 +40,25 @@
     <line>
       <![CDATA[Test Completed - Report Generated]]>
     </line>
+    <line>
+      <![CDATA[Login button Sucessfully clicked]]>
+    </line>
+    <line>
+      <![CDATA[<br> Result of the Test - loginApp Exceuted - Pass]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed - Report Generated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-04-04T00:06:30 IST" name="Suite" finished-at="2024-04-04T00:06:43 IST" duration-ms="12447">
+  <suite started-at="2024-06-30T20:37:06 IST" name="Suite" finished-at="2024-06-30T20:38:56 IST" duration-ms="110274">
     <groups>
     </groups>
-    <test started-at="2024-04-04T00:06:30 IST" name="Test" finished-at="2024-04-04T00:06:43 IST" duration-ms="12447">
+    <test started-at="2024-06-30T20:37:06 IST" name="Test" finished-at="2024-06-30T20:38:56 IST" duration-ms="110274">
       <class name="com.org.testcases.DashboardTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-04-04T00:06:30 IST" name="setup" finished-at="2024-04-04T00:06:35 IST" duration-ms="5068" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-06-30T20:37:06 IST" name="setup" finished-at="2024-06-30T20:37:24 IST" duration-ms="17269" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start browser and getting application ready]]>
@@ -68,7 +68,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DashboardVerification()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-04-04T00:06:35 IST" name="DashboardVerification" finished-at="2024-04-04T00:06:43 IST" duration-ms="7181" status="PASS">
+        <test-method signature="DashboardVerification()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-06-30T20:37:24 IST" name="DashboardVerification" finished-at="2024-06-30T20:38:38 IST" duration-ms="74109" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login button Sucessfully clicked]]>
@@ -84,7 +84,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- DashboardVerification -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-04-04T00:06:43 IST" name="teardownMethod" finished-at="2024-04-04T00:06:43 IST" duration-ms="16" status="PASS">
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-06-30T20:38:38 IST" name="teardownMethod" finished-at="2024-06-30T20:38:38 IST" duration-ms="369" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,13 +101,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-04-04T00:06:43 IST" name="tearDown" finished-at="2024-04-04T00:06:43 IST" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.DashboardTest@1787f2a0]" started-at="2024-06-30T20:38:38 IST" name="tearDown" finished-at="2024-06-30T20:38:38 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.org.testcases.DashboardTest -->
       <class name="com.org.testcases.LoginTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-04-04T00:06:30 IST" name="setUpSuite" finished-at="2024-04-04T00:06:30 IST" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-06-30T20:37:06 IST" name="setUpSuite" finished-at="2024-06-30T20:37:06 IST" duration-ms="189" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and test is getting ready]]>
@@ -117,7 +117,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-04-04T00:06:30 IST" name="setup" finished-at="2024-04-04T00:06:35 IST" duration-ms="5068" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-06-30T20:37:06 IST" name="setup" finished-at="2024-06-30T20:37:17 IST" duration-ms="10545" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start browser and getting application ready]]>
@@ -127,7 +127,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-04-04T00:06:35 IST" name="loginApp" finished-at="2024-04-04T00:06:39 IST" duration-ms="3656" status="PASS">
+        <test-method signature="loginApp()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-06-30T20:37:17 IST" name="loginApp" finished-at="2024-06-30T20:38:56 IST" duration-ms="99431" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Web URL verified]]>
@@ -140,7 +140,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-04-04T00:06:39 IST" name="teardownMethod" finished-at="2024-04-04T00:06:40 IST" duration-ms="531" status="PASS">
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-06-30T20:38:56 IST" name="teardownMethod" finished-at="2024-06-30T20:38:56 IST" duration-ms="40" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-04-04T00:06:40 IST" name="tearDown" finished-at="2024-04-04T00:06:40 IST" duration-ms="175" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.LoginTest@747f281]" started-at="2024-06-30T20:38:56 IST" name="tearDown" finished-at="2024-06-30T20:38:56 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

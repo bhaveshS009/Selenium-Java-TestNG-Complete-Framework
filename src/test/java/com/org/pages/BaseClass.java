@@ -20,23 +20,23 @@ import com.org.utility.BrowserFactory;
 import com.org.utility.ConfigDataProvider;
 import com.org.utility.WebDriver_EventListener;
 
-import jdk.jfr.internal.Logger;
+//import jdk.jfr.internal.Logger;
 
 import com.org.utility.Helper;
 
 
 public class BaseClass {
 	//Not static because sperate instance for each test class execution
-	public WebDriver driver;
-	public ConfigDataProvider config;
-	public ExtentTest logger;
+	protected WebDriver driver;
+	protected ConfigDataProvider config;
+	protected ExtentTest logger;
 	//Static because common across all test class execution
-	public static ExtentSparkReporter spark;
-	public static ExtentReports report;
-	public static WebDriverListener eventListener;
-	public WebDriver decoratedDriver;
+	protected static ExtentSparkReporter spark;
+	protected static ExtentReports report;
+	protected static WebDriverListener eventListener;
+	protected WebDriver decoratedDriver;
 		
-	public BaseClass() {
+	protected BaseClass() {
 	report = new ExtentReports();
 	
 	try {
